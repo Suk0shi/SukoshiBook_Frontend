@@ -1,0 +1,65 @@
+.coverPhotos {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+.coverPhotos .bannerImg {
+    width: 1250px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.coverPhotos .addCoverPhoto {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1; 
+}
+
+.coverPhotos .addCoverPhoto:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.coverPhotos .changeProfileIcon {
+    padding: 0px;
+    border-radius: 1000px;
+    border-width: 4px;
+    height: 167px;
+    border-color: white;
+    position: absolute;
+    bottom: -70px; 
+    left: 40px; 
+    cursor: pointer;
+    z-index: 1; 
+}
+
+.coverPhotos .svg {
+    position: absolute;
+    bottom: -50px; 
+    left: 170px; 
+    z-index: 2; 
+    background-color: #e4e6eb;
+    border-radius: 100px;
+    height: 30px;
+}
+
+.coverPhotos .changeProfileIcon img {
+    border-radius: 1000px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.coverPhotos h2 {
+    position: absolute;
+    bottom: -75px;
+    left: 225px;
+    font-size: 30px;
+}

@@ -1,0 +1,40 @@
+.friendsPage {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    color: grey;
+}
+
+.friendsNav {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    text-align: start;
+    padding-left: 20px;
+    height: calc(100vh - 56px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.friendsNav button {
+    background-color: #f0f2f5;
+    color: grey;
+    text-align: start;
+}
+
+.addFriends,
+.friendRequests,
+.allFriends {
+    display: grid;
+    justify-content: center;
+}
+
+.friendRequestCard{
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.friendRequestCard img {
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

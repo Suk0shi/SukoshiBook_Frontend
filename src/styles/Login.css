@@ -1,0 +1,91 @@
+:root {
+    --sukoshiBookBlue: rgb(8, 102, 255);
+    --textBlack: rgb(28, 30, 33);
+    --borderGrey: rgb(221,223,226);
+    --signUpGreen: rgb(66, 183, 42);
+}
+
+.loginPage {
+    background-color: rgb(240, 242, 245);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    align-content: center;
+    gap: 100px;
+}
+
+.loginPage .left {
+    width: 400px;
+    justify-self: end;
+    align-self: start;
+}
+
+.loginPage .right {
+    justify-self: start;
+}
+
+.loginPage .left h1 {
+    color: var(--sukoshiBookBlue);
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.loginPage p {
+    color: var(--textBlack);
+    text-align: start;
+    font-size: 20px;
+}
+
+.loginPage .right p {
+    text-align: center;
+}
+
+.loginCard {
+    display: grid;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    max-width: 500px;
+    padding: 10px;
+    height: 320px;
+}
+
+.loginCard form {
+    width: 100%;
+    justify-content: normal;
+}
+
+.loginCard input {
+    background-color: white;
+    border-color: var(--borderGrey);
+    padding: 8px;
+    border-radius: 5px;
+    border-style: solid;
+    margin-bottom: 10px;
+    padding: 15px;
+    color: var(--textBlack);
+    font-size: 1em;
+}
+
+.loginCard button {
+    background-color: var(--sukoshiBookBlue);
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.loginCard .signUpButton {
+    background-color: var(--signUpGreen);
+    width: 210px;
+    margin-top: 15px;
+    font-size: 16px;
+    align-self: end;
+}
+
+.line {
+    background-color: var(--borderGrey);
+    height: 2px;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,10 @@
+.deletePost {
+    background-color: rgb(61, 0, 0);
+    width: 185px;
+    justify-self: center;
+    margin-top: 15px;
+}
+
+.message {
+    height: 40px;
+}

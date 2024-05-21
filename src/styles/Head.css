@@ -1,0 +1,50 @@
+header {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    height: 56px;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    z-index: 5;
+}
+
+.pageLinks {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    max-width: 700px;
+    min-width: 250px;
+    gap: 5px;
+}
+
+.pageLinks svg {
+    padding: 15px 20px;
+}
+
+.settings {
+    height: 100%;
+}
+
+.settings button {
+    background-color: #ffffff;
+    height: 100%;
+    padding: 0;
+    border: none;
+}
+
+.settingsDropdown {
+    display: grid;
+    justify-content: normal;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+}
