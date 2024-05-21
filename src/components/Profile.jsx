@@ -17,7 +17,7 @@ function Profile({ setEditInfo}) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:3000/blog/profilePosts', {
+    fetch('https://sukoshibook.adaptable.app/blog/profilePosts', {
       mode: 'cors', 
       headers: {
         'Authorization': `${localStorage.getItem('SavedToken')}`,
@@ -35,7 +35,7 @@ function Profile({ setEditInfo}) {
     const formData = new FormData(e.target);
     const payload = Object.fromEntries(formData);
     console.log(JSON.stringify(payload))
-    fetch(`http://localhost:3000/blog/post`, {
+    fetch(`https://sukoshibook.adaptable.app/blog/post`, {
       method: 'Post', 
       headers: {
         'Authorization': `${localStorage.getItem('SavedToken')}`,
@@ -65,7 +65,7 @@ function Profile({ setEditInfo}) {
   function handleLikeSubmit(id) {
     
   
-    fetch(`http://localhost:3000/blog/like/${id}`, {
+    fetch(`https://sukoshibook.adaptable.app/blog/like/${id}`, {
       method: 'Post', 
       headers: {
         'Authorization': `${localStorage.getItem('SavedToken')}`,
@@ -94,7 +94,7 @@ function Profile({ setEditInfo}) {
     const formData = new FormData(e.target);
     const payload = Object.fromEntries(formData);
     console.log(JSON.stringify(payload))
-    fetch(`http://localhost:3000/blog/editIcon`, {
+    fetch(`https://sukoshibook.adaptable.app/blog/editIcon`, {
       method: 'Post', 
       headers: {
         'Authorization': `${localStorage.getItem('SavedToken')}`,

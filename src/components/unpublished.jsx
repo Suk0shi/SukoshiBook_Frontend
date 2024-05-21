@@ -11,7 +11,7 @@ function Unpublished({setId, setEditInfo}) {
   const [blogData, setBlogData] = useState()
   
   useEffect(() => {
-    fetch('http://localhost:3000/blog/unpublished', {
+    fetch('https://sukoshibook.adaptable.app/blog/unpublished', {
       mode: 'cors',
       headers: {
         'Authorization': `${localStorage.getItem('SavedToken')}`

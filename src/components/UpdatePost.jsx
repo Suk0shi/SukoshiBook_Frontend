@@ -14,7 +14,7 @@ function CreatePost({editInfo}) {
       const payload = Object.fromEntries(formData);
       
       if (editInfo.id !== undefined) {
-        fetch(`http://localhost:3000/blog/post/${editInfo.id}/update`, {
+        fetch(`https://sukoshibook.adaptable.app/blog/post/${editInfo.id}/update`, {
           method: 'Post', 
           headers: {
             'Authorization': `${localStorage.getItem('SavedToken')}`,
@@ -46,7 +46,7 @@ function CreatePost({editInfo}) {
       e.preventDefault();
     
       if (editInfo.id !== undefined) {
-        fetch(`http://localhost:3000/blog/post/${editInfo.id}/delete`, {
+        fetch(`https://sukoshibook.adaptable.app/blog/post/${editInfo.id}/delete`, {
           method: 'Post', 
           headers: {
             'Authorization': `${localStorage.getItem('SavedToken')}`,

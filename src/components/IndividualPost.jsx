@@ -10,7 +10,7 @@ function IndividualPost({id, setId, blogData}) {
   
     //fetch individual blog post with comments 
     useEffect(() => {
-        fetch(`http://localhost:3000/blog/post/${id}`, {
+        fetch(`https://sukoshibook.adaptable.app/blog/post/${id}`, {
           mode: 'cors'})
           .then((response) => response.json())
           .then((data) => { console.log(data), setData(data)})
@@ -22,7 +22,7 @@ function IndividualPost({id, setId, blogData}) {
       const formData = new FormData(e.target);
       const payload = Object.fromEntries(formData);
       
-      fetch(`http://localhost:3000/blog/comment/${id}`, {
+      fetch(`https://sukoshibook.adaptable.app/blog/comment/${id}`, {
         method: 'Post', 
         headers: {
           'Authorization': `${localStorage.getItem('SavedToken')}`,
@@ -50,7 +50,7 @@ function IndividualPost({id, setId, blogData}) {
     function handleDelete(id) {
     
       if (id !== undefined) {
-        fetch(`http://localhost:3000/blog/comment/${id}/delete`, {
+        fetch(`https://sukoshibook.adaptable.app/blog/comment/${id}/delete`, {
           method: 'Post', 
           headers: {
             'Authorization': `${localStorage.getItem('SavedToken')}`,
@@ -115,7 +115,7 @@ function IndividualPost({id, setId, blogData}) {
 
     return (
       <>
-        <form action={`http://localhost:3000/blog/comment/${id}`} method="POST" 
+        <form action={`https://sukoshibook.adaptable.app/blog/comment/${id}`} method="POST" 
         onSubmit={handleSubmit}>
             <label htmlFor="text"> Text </label>
             <input type="text" name='text' placeholder='text'/>
