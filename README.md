@@ -1,8 +1,13 @@
-# React + Vite
+# Sukoshibook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Facebook clone allowing users to follow others and make posts.
 
-Currently, two official plugins are available:
+View live: https://sukoshibook.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Backend repo: https://github.com/Suk0shi/SukoshiBook_API
+
+![image](https://github.com/Suk0shi/SukoshiBook_Frontend/assets/144342852/ac308c8c-6731-4651-a9f1-aace11bf1568)
+
+![image](https://github.com/Suk0shi/SukoshiBook_Frontend/assets/144342852/371ae709-c55f-4d36-adc6-299e5adbb8fc)
+
+![image](https://github.com/Suk0shi/SukoshiBook_Frontend/assets/144342852/95def1d3-afb3-4f98-8cf6-13cdfc5b4d98)
