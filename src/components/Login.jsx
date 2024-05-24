@@ -39,7 +39,8 @@ function Login() {
         }
       })
       .catch((err) => {
-        setMessage(err.toString());
+        console.log(err.toString());
+        setMessage("Incorrect Login Details");
       });
     }
 
