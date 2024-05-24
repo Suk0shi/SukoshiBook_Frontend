@@ -121,7 +121,6 @@ function IndividualPost({id, setId, blogData}) {
             <input type="text" name='text' placeholder='text'/>
             <button>Send</button>
         </form>
-        <p>{message}</p>
       </>
     )
   }

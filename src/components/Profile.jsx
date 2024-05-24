@@ -137,7 +137,7 @@ function Profile({ setEditInfo}) {
       setBlogData(prevData => {
         const newPosts = [...prevData.posts]; // Create a copy of the posts array
         newPosts[index].liked = false; // Update the liked status
-        newPosts[index].likesCount -= 0.5; // Update the liked status
+        newPosts[index].likesCount -= 1; // Update the liked status
         return { ...prevData, posts: newPosts }; // Update the state with the new posts array
       });
     } else {
@@ -146,7 +146,7 @@ function Profile({ setEditInfo}) {
       setBlogData(prevData => {
         const newPosts = [...prevData.posts]; // Create a copy of the posts array
         newPosts[index].liked = true; // Update the liked status
-        newPosts[index].likesCount += 0.5; // Update the liked status
+        newPosts[index].likesCount += 1; // Update the liked status
         return { ...prevData, posts: newPosts }; // Update the state with the new posts array
       });
     }
