@@ -120,7 +120,7 @@ function Friends() {
                 <h2>Add Friends</h2>
                 <form className='feedPost' method="POST" onSubmit={handleSubmit}>
                   <label htmlFor="username">Username (Firstname Surname)</label>
-                  <input type="text" name='username' placeholder={`e.g. Jhon Taylor`} required/> <br />
+                  <input type="text" name='username' placeholder={`e.g. John Taylor`} required/> <br />
                   <button>Post</button>
                 </form>
             <p>{message}</p>

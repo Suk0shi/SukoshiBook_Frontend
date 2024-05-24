@@ -27,7 +27,7 @@ function Profile({ setEditInfo}) {
     })
       .then((response) => response.json())
       .then((data) => { console.log(data), setBlogData(data)})
-  }, [ ]);
+  }, [ message ]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

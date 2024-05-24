@@ -82,11 +82,11 @@ function IndividualPost({id, setId, blogData}) {
         <div className='postCardContainer'>
           <div className='postCard overflowY'>
             <button className='backButton' onClick={() => setId(undefined)}>X</button>
-            <img className='userIcon' src={data.post.iconUrl} alt="Users profile picture" />
-            <h3>{data.post.name}</h3>
-            <p className='date'>{data.post.date}</p>
-            <p className='text'>{data.post.text}</p>
-            <img className='imgUrl' src={data.post.imgUrl} alt="" />
+            <img className='userIcon' src={data.iconUrl} alt="Users profile picture" />
+            <h3>{data.name}</h3>
+            <p className='date'>{data.date}</p>
+            <p className='text'>{data.text}</p>
+            <img className='imgUrl' src={data.imgUrl} alt="" />
             <h3 className='commentsH3'>Comments</h3> 
             {(data.post_comments.length === 0) ? <p className='commentsContainer'>No comments. Be the first?</p> : 
             <div className='commentsContainer'>
