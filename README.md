@@ -4,6 +4,10 @@ This is a Facebook clone allowing users to follow others and make posts.
 
 View live: https://sukoshibook.netlify.app/
 
+Figma prototype: https://www.figma.com/proto/TCnAWCVrjtZrM4G9b2u3el/Figma-basics?node-id=1669-162202&t=Y4KOpk2QyzyhIlaH-1
+
+Figma file: https://www.figma.com/design/TCnAWCVrjtZrM4G9b2u3el/Figma-basics?node-id=1669-162202&t=Y4KOpk2QyzyhIlaH-1
+
 Backend repo: https://github.com/Suk0shi/SukoshiBook_API
 
 ![image](https://github.com/Suk0shi/SukoshiBook_Frontend/assets/144342852/ac308c8c-6731-4651-a9f1-aace11bf1568)
