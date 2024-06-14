@@ -1,6 +1,6 @@
 # Sukoshibook
 
-This is a Facebook clone allowing users to follow others and make posts.
+This is a full-stack Facebook clone utilizing a REST API allowing users to follow others and make posts.
 
 View live: https://sukoshibook.netlify.app/
 
