@@ -130,6 +130,7 @@ function Friends() {
               //display all friend requests with delete or accept
               <div className="friendRequests">
                 <h2>Follow Requests</h2>
+                <div className="cardContainer">
                 {friendData.followRequestsNames.map((data, index) => (
                   <div key={data+index+'card'} className='friendRequestCard'>
                     <p key={data+index}>{data}</p>
@@ -137,27 +138,34 @@ function Friends() {
                     <button key={data+index+'decline'} onClick={() => declineRequest(data)}>Decline</button>
                   </div>
                 ))}
+                </div>
                 <h2>Pending Requests</h2>
-                {friendData.pendingRequestsNames.map((data, index) => (<p key={data+index}>{data}</p>))}
+                <div className="cardContainer">
+                  {friendData.pendingRequestsNames.map((data, index) => (<p key={data+index}>{data}</p>))}
+                </div>
               </div>
               : undefined}
             {page==='allFriends'? 
               //display all friends
               <div className="allFriends">
                 <h2>Following</h2>
-                {friendData.followingNames.map((data, index) => (
-                  <div key={data+index+'card'} className="friendRequestCard">
-                    <img src={data.iconUrl} alt="Proifle picture" />
-                    <p key={data+index}>{data.username}</p>
-                  </div>
-                ))}
+                <div className="cardContainer">
+                  {friendData.followingNames.map((data, index) => (
+                    <div key={data+index+'card'} className="friendRequestCard">
+                      <img src={data.iconUrl} alt="Proifle picture" />
+                      <p key={data+index}>{data.username}</p>
+                    </div>
+                  ))}
+                </div>
                 <h2>Followers</h2>
-                {friendData.followerNames.map((data, index) => (
-                  <div key={data+index+'card'} className="friendRequestCard">
-                    <img src={data.iconUrl} alt="Proifle picture" />
-                    <p key={data+index}>{data.username}</p>
-                  </div>
-                ))}
+                <div className="cardContainer">
+                  {friendData.followerNames.map((data, index) => (
+                    <div key={data+index+'card'} className="friendRequestCard">
+                      <img src={data.iconUrl} alt="Proifle picture" />
+                      <p key={data+index}>{data.username}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
               : undefined}
           </div>

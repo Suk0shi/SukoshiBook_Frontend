@@ -287,8 +287,9 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: sticky;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.457);
+    bottom: 0px;
 }
