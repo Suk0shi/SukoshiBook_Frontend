@@ -16,7 +16,7 @@ function Login() {
       const formData = new FormData(e.target);
       const payload = Object.fromEntries(formData);
       
-      fetch(`https://sukoshibook.adaptable.app/log-in`, {
+      fetch(`${import.meta.env.VITE_API_URL}/log-in`, {
         method: 'Post', 
         headers: {
           Accept: 'application/json',
@@ -52,7 +52,7 @@ function Login() {
         </div>
         <div className="right">
           <div className="loginCard">
-            <form action="https://sukoshibook.adaptable.app/log-in" method="POST" onSubmit={handleSubmit}>
+            <form action={`${import.meta.env.VITE_API_URL}/log-in`} method="POST" onSubmit={handleSubmit}>
                 <input type="email" name='username' placeholder='Email address'/>
                 <input type="password" name='password' placeholder='Password'/>
                 <button>Log In</button>

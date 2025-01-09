@@ -11,7 +11,7 @@ function Unpublished({setId, setEditInfo}) {
   const [blogData, setBlogData] = useState()
   
   useEffect(() => {
-    fetch('https://sukoshibook.adaptable.app/blog/unpublished', {
+    fetch(`${import.meta.env.VITE_API_URL}/blog/unpublished`, {
       mode: 'cors',
       headers: {
         'Authorization': `${localStorage.getItem('SavedToken')}`

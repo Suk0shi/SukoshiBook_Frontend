@@ -15,7 +15,7 @@ function Shop() {
       const formData = new FormData(e.target);
       const payload = Object.fromEntries(formData);
       
-      fetch(`https://sukoshibook.adaptable.app/blog/signUp`, {
+      fetch(`${import.meta.env.VITE_API_URL}/blog/signUp`, {
         method: 'Post', 
         headers: {
           'Authorization': `${localStorage.getItem('SavedToken')}`,
@@ -48,7 +48,7 @@ function Shop() {
         <div className="signUpCard">
           <h1>Sign Up</h1>
           <p>It&apos;s quick and easy.</p>
-          <form action="https://sukoshibook.adaptable.app/blog/signUp" method="POST" onSubmit={handleSubmit}>
+          <form action={`${import.meta.env.VITE_API_URL}/blog/signUp`} method="POST" onSubmit={handleSubmit}>
               <label htmlFor="firstName"> First Name </label>
               <input type="text" name='firstName' placeholder='First Name' required/> <br />
               <label htmlFor="lastName"> Surname </label>

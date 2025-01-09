@@ -17,7 +17,7 @@ function Friends() {
 
 
     useEffect(() => {
-      fetch('https://sukoshibook.adaptable.app/blog/friends', {
+      fetch(`${import.meta.env.VITE_API_URL}/blog/friends`, {
         mode: 'cors', 
         headers: {
           'Authorization': `${localStorage.getItem('SavedToken')}`,
@@ -34,7 +34,7 @@ function Friends() {
   
       const formData = new FormData(e.target);
       const payload = Object.fromEntries(formData);
-      fetch(`https://sukoshibook.adaptable.app/blog/addFriend`, {
+      fetch(`${import.meta.env.VITE_API_URL}/blog/addFriend`, {
         method: 'Post', 
         headers: {
           'Authorization': `${localStorage.getItem('SavedToken')}`,
@@ -63,7 +63,7 @@ function Friends() {
       //remove username from pending requests
       //add username to followers
       //add users username to their following list ?
-      fetch(`https://sukoshibook.adaptable.app/blog/acceptFriend`, {
+      fetch(`${import.meta.env.VITE_API_URL}/blog/acceptFriend`, {
         method: 'Post', 
         headers: {
           'Authorization': `${localStorage.getItem('SavedToken')}`,
