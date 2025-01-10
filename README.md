@@ -2,6 +2,7 @@
 
 This is a full-stack Facebook clone utilizing a REST API allowing users to follow others and make posts.
 
+Note: The backend server is hosted on a platform with cold start times. As a result, it may take up to 50 seconds for the server to initialize after an extended period of inactivity.
 View live: https://sukoshibook.netlify.app/
 
 Backend repo: https://github.com/Suk0shi/SukoshiBook_API
